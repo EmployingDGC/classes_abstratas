@@ -11,13 +11,24 @@ void main(List<String> arguments) {
  * usadas quando não faz sentido criar uma instancia da superclasse
  */
 abstract class Animal {
-
+  /*
+   * Também é permitido a crianção de métodos sem escopo,
+   * mas é necessário a criação do @override do método
+   * nas classes filhas.
+  */
+  void fazerSom();
 }
 
 class Cachorro extends Animal {
-
+  @override
+  void fazerSom() {
+    
+  }
 }
 
 class Gato extends Animal {
+  @override
+  void fazerSom() {
 
+  }
 }
